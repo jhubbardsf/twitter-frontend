@@ -35,18 +35,25 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background-image: asset-url('background.jpg');
+    background-image: asset-url('background-brown.jpg');
 }
 
 .intro-message {
     position: relative;
     padding-top: 20%;
-    padding-bottom: 20%;
+    margin-bottom: 20%;
+    .twit-link {
+      text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+      a {
+        color: white;
+        font-weight: 900;
+      }
+    }
 }
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+      text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
 }
 
@@ -162,6 +169,7 @@ h6 {
 footer {
     padding: 50px 0;
     background-color: #f8f8f8;
+    text-align: right;
 }
 
 p.copyright {
