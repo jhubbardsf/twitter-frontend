@@ -8,16 +8,8 @@
           %h3 Get Information on 3 Awesome Topics!
           %hr.intro-divider
           .col-xs-6.col-md-4.twit-link
-            = link_to 'Healthcare', '#'
+            = link_to 'Healthcare', topic_path(:healthcare)
           .col-xs-6.col-md-4.twit-link
-            = link_to 'NASA', '#'
+            = link_to 'NASA', topic_path(:nasa)
           .col-xs-6.col-md-4.twit-link
-            = link_to 'Open Source', '#'
-%footer
-  .container
-    .row
-      .col-lg-12
-        %ul.list-inline
-          %li
-            %a{:href => "#"} Home
-        %p.copyright.text-muted.small Copyright © Josh Hubbard 2016. All Rights Reserved
+            = link_to 'Open Source', topic_path(:opensource)

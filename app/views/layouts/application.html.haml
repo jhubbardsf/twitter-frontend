@@ -13,3 +13,11 @@
     %main{:role => "main"}
       = render 'shared/messages'
       = yield
+  %footer
+    .container
+      .row
+        .col-lg-12
+          %ul.list-inline
+            %li
+              %a{href: root_path} Home
+          %p.copyright.text-muted.small Copyright © Josh Hubbard 2016. All Rights Reserved
