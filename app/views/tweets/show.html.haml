@@ -4,14 +4,16 @@
     - @tweets['tweets'].each_slice(2) do |tweets|
       .row
         .col-lg-6.center
-          %blockquote.twitter-tweet
-            %p
-              = tweets[0]['text']
-            = "- #{tweets[0]['user_name']} (@#{tweets[0]['screen_name']})"
-            = link_to DateTime.parse(tweets[0]['create_date']).strftime('%B %e, %Y %l:%M %p'), tweets[0]['link']
+          %a{href: "http://#{tweets[0]['link']}"}
+            %blockquote.twitter-tweet
+              %p
+                = tweets[0]['text']
+              = "- #{tweets[0]['user_name']} (@#{tweets[0]['screen_name']})"
+              = link_to DateTime.parse(tweets[0]['create_date']).in_time_zone('Eastern Time (US & Canada)').strftime('%B %e, %Y %l:%M %p'), tweets[0]['link']
         .col-lg-6.center
-          %blockquote.twitter-tweet
-            %p
-              = tweets[1]['text']
-            = "- #{tweets[1]['user_name']} (@#{tweets[1]['screen_name']})"
-            = link_to DateTime.parse(tweets[1]['create_date']).strftime('%B %e, %Y %l:%M %p'), tweets[1]['link']
+          %a{href: "http://#{tweets[1]['link']}"}
+            %blockquote.twitter-tweet
+              %p
+                = tweets[1]['text']
+              = "- #{tweets[1]['user_name']} (@#{tweets[1]['screen_name']})"
+              = link_to DateTime.parse(tweets[1]['create_date']).in_time_zone('Eastern Time (US & Canada)').strftime('%B %e, %Y %l:%M %p'), tweets[1]['link']
