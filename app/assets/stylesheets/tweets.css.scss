@@ -33,3 +33,11 @@ blockquote.twitter-tweet {
     }
   }
 }
+
+h3.twitter-headline {
+  margin-top: 0px;
+}
+
+.twitter-headline {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

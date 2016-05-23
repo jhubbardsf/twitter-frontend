@@ -15,6 +15,7 @@ gem 'devise'
 gem 'haml-rails'
 gem 'high_voltage', :github=>"thoughtbot/high_voltage"
 gem 'therubyracer', :platform=>:ruby
+gem 'httparty'
 group :development, :test do
   gem 'dotenv-rails'
   gem 'byebug', platform: :mri

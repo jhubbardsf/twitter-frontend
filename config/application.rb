@@ -20,6 +20,8 @@ module NurelmFront
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
 
+    config.twitter_service = 'http://localhost:3001'
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
