@@ -16,8 +16,8 @@ gem 'haml-rails'
 gem 'high_voltage', :github=>"thoughtbot/high_voltage"
 gem 'therubyracer', :platform=>:ruby
 gem 'httparty'
+gem 'dotenv-rails'
 group :development, :test do
-  gem 'dotenv-rails'
   gem 'byebug', platform: :mri
   gem 'factory_girl_rails'
   gem 'faker'
