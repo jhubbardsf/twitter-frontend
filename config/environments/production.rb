@@ -26,7 +26,7 @@ Rails.application.configure do
   config.assets.compile = false
 
   # Production twitter service
-  config.twitter_service = 'http://107.170.87.119'
+  config.twitter_service = 'http://107.170.47.11'
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

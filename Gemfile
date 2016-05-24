@@ -24,6 +24,11 @@ group :development, :test do
   gem 'rspec-rails'
 end
 group :development do
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
@@ -33,11 +38,6 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
-  gem 'capistrano',         require: false
-  gem 'capistrano-rvm',     require: false
-  gem 'capistrano-rails',   require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma',   require: false
 end
 group :production do
   gem 'unicorn'
